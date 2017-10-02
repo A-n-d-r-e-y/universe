@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universe", "Universe\Universe.csproj", "{24D9A4E3-6EF8-4923-A588-0881B4046CED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsole", "Universe\TestingConsole.csproj", "{24D9A4E3-6EF8-4923-A588-0881B4046CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Universe.Engine", "Universe.engine\Universe.Engine.csproj", "{991B26D5-20E0-4020-9D2A-1743CFF19B9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{24D9A4E3-6EF8-4923-A588-0881B4046CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24D9A4E3-6EF8-4923-A588-0881B4046CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24D9A4E3-6EF8-4923-A588-0881B4046CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991B26D5-20E0-4020-9D2A-1743CFF19B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991B26D5-20E0-4020-9D2A-1743CFF19B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991B26D5-20E0-4020-9D2A-1743CFF19B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991B26D5-20E0-4020-9D2A-1743CFF19B9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
