@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ConsoleLogger.cs" />
     <Compile Include="ILogger.cs" />
+    <Compile Include="IMicrowave.cs" />
     <Compile Include="IStateReporter.cs" />
     <Compile Include="Microwave.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

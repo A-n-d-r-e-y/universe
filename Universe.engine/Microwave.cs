@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Universe.Engine
 {
-    public class Microwave : IStateReporter
+    public class Microwave : IStateReporter, IMicrowave
     {
         private readonly ILogger logger;
 

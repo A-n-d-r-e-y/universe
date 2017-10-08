@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Universe.Engine;
 
-namespace Universe
+namespace Universe.Console
 {
     class Program
     {
@@ -29,7 +29,7 @@ namespace Universe
                 lg.WriteToLog(sb.ToString());
                 sb.Clear();
 
-                switch (Console.ReadKey().KeyChar)
+                switch (System.Console.ReadKey().KeyChar)
                 {
                     case '1':
                         mw.OpenTheDoor();
