@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Universe.API.Models;
+using Universe.Engine;
 
 namespace Universe.API.Controllers
 {
@@ -12,9 +12,7 @@ namespace Universe.API.Controllers
     {
         Microwave[] products = new Microwave[]
         {
-            new Microwave { Id = 1, Name = "Tomato Soup", Category = "Groceries", Price = 1 },
-            new Microwave { Id = 2, Name = "Yo-yo", Category = "Toys", Price = 3.75M },
-            new Microwave { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M }
+            new Microwave(),
         };
 
         public IEnumerable<Microwave> GetAllProducts()
@@ -22,14 +20,14 @@ namespace Universe.API.Controllers
             return products;
         }
 
-        public IHttpActionResult GetProduct(int id)
-        {
-            var product = products.FirstOrDefault((p) => p.Id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return Ok(product);
-        }
+        //public IHttpActionResult GetProduct(int id)
+        //{
+        //    var product = products.FirstOrDefault((p) => p.Id == id);
+        //    if (product == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(product);
+        //}
     }
 }
