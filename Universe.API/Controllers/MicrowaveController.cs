@@ -10,14 +10,14 @@ namespace Universe.API.Controllers
 {
     public class MicrowaveController : ApiController
     {
-        Microwave[] products = new Microwave[]
+        Microwave[] microwave = new Microwave[]
         {
             new Microwave(),
         };
 
-        public IEnumerable<Microwave> GetAllProducts()
+        public IEnumerable<Microwave> GetMicrowave()
         {
-            return products;
+            return microwave;
         }
 
         //public IHttpActionResult GetProduct(int id)
