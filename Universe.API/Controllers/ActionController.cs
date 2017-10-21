@@ -16,9 +16,9 @@ namespace Universe.API.Controllers
         }
 
         // GET: api/Action/5
-        public string Get(int id)
+        public string Get(int actionId)
         {
-            return "value" + id.ToString();
+            return "value" + actionId.ToString();
         }
 
         // POST: api/Action

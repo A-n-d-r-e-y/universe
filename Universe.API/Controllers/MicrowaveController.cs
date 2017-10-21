@@ -15,7 +15,7 @@ namespace Universe.API.Controllers
             new Microwave(),
         };
 
-        public IEnumerable<Microwave> GetMicrowave()
+        public IEnumerable<Microwave> Get()
         {
             return microwave;
         }
