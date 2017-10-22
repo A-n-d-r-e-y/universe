@@ -22,9 +22,15 @@ namespace Universe.API
 
             config.Routes.MapHttpRoute(
                 name: "Action",
-                routeTemplate: "api/microwave/{id}/action/{actionId}",
-                defaults: new { controller = "Action", actionId = RouteParameter.Optional }
+                routeTemplate: "api/microwave/{id}/action",
+                defaults: new { controller = "Action" }
             );
+
+            //config.Routes.MapHttpRoute(
+            //    name: "Action",
+            //    routeTemplate: "api/microwave/{id}/action/{actionId}",
+            //    defaults: new { controller = "Action", actionId = RouteParameter.Optional }
+            //);
         }
     }
 }

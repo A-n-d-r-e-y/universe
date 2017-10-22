@@ -12,16 +12,16 @@ namespace Universe.API.Controllers
     public class ActionController : ApiController
     {
         // GET: api/Action
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
         // GET: api/Action/5
-        public string Get(int actionId)
-        {
-            return "value" + actionId.ToString();
-        }
+        //public string Get(int actionId)
+        //{
+        //    return "value" + actionId.ToString();
+        //}
 
         // POST: api/Action
         public IHttpActionResult Post([FromBody]MicrowaveAction value)
