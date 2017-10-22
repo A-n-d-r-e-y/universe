@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Universe.API.Models;
+using Universe.Engine;
 
 namespace Universe.API.Controllers
 {
@@ -22,8 +24,30 @@ namespace Universe.API.Controllers
         }
 
         // POST: api/Action
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]MicrowaveAction value)
         {
+            if (value == null)
+            {
+                return BadRequest("Item cannot be null");
+            }
+
+            var mw = new Microwave();
+            switch (value.ActionName)
+            {
+                case "OpenTheDoor":
+                    mw.OpenTheDoor();
+                    break;
+                case "PressTheButton":
+                    mw.PressTheButton();
+                    break;
+                case "CloseTheDoor":
+                    mw.CloseTheDoor();
+                    break;
+                default:
+                    break;
+            }
+
+            return Ok(mw);
         }
     }
 }
