@@ -37,21 +37,37 @@ namespace Universe.API.Controllers
             }
 
             var mw = new Microwave();
+            var en = (MicrowaveActions)Enum.Parse(typeof(MicrowaveActions), value.ActionName);
 
-            switch (value.ActionName)
+            switch (en)
             {
-                case "OpenTheDoor":
+                case MicrowaveActions.OpenTheDoor:
                     mw.OpenTheDoor();
                     break;
-                case "PressTheButton":
+                case MicrowaveActions.PressTheButton:
                     mw.PressTheButton();
                     break;
-                case "CloseTheDoor":
+                case MicrowaveActions.CloseTheDoor:
                     mw.CloseTheDoor();
                     break;
                 default:
                     break;
             }
+
+            //switch (value.ActionName)
+            //{
+            //    case "OpenTheDoor":
+            //        mw.OpenTheDoor();
+            //        break;
+            //    case "PressTheButton":
+            //        mw.PressTheButton();
+            //        break;
+            //    case "CloseTheDoor":
+            //        mw.CloseTheDoor();
+            //        break;
+            //    default:
+            //        break;
+            //}
 
             return Ok(mw);
         }
