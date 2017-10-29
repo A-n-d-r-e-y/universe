@@ -31,6 +31,11 @@ namespace Universe.API.Controllers
                 return BadRequest("Item cannot be null");
             }
 
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var mw = new Microwave();
 
             switch (value.ActionName)
